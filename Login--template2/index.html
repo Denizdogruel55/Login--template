@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+ <div id="container" class="container text-center">
+    <form  method="post">
+        <div class="mb-3 col-3  mx-auto">
+            <label for="kullad" class="form-label">Kullanici adi:</label>
+            <input type="text" name="" id="kullad" placeholder="Kullaniciadi Giriniz..." class="form-control">
+        </div>
+            <div class="mb-3 col-3 mx-auto">
+            <label for="sifre" class="form-label">Parola:</label>
+            <input type="password" name="" placeholder="sifre Giriniz..." id="sifre" class="form-control">
+        </div>
+        <button class="btn btn-primary" type="submit" id="girisbutton">Giris Yap</button>
+    </form>
+ </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ <script>
+  let button=document.getElementById("girisbutton");
+   button.addEventListener("click",function(){
+     let inputkullad=document.getElementById("kullad").value.trim();
+   let sifre=document.getElementById("sifre").value.trim();
+
+   
+    if(inputkullad=="admin" && sifre=="1234"){
+    
+       alert("giriş başarılı");
+    }else{
+    alert("hatalı giriş");
+   }
+   
+   })
+ </script>
+</body>
+</html>
